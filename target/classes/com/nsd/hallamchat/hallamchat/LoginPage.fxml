@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.nsd.hallamchat.Client">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="name" alignment="CENTER" layoutX="185.0" layoutY="23.0" prefHeight="35.0" prefWidth="232.0" promptText="Username" />
+            <TextField fx:id="hostname" alignment="CENTER" layoutX="184.0" layoutY="131.0" prefHeight="35.0" prefWidth="232.0" promptText="Server Hostname" />
+            <TextField fx:id="port" alignment="CENTER" layoutX="184.0" layoutY="174.0" prefHeight="35.0" prefWidth="232.0" promptText="Server Port Number" />
+            <Button fx:id="loginButton" layoutX="236.0" layoutY="246.0" mnemonicParsing="false" onAction="#connect" prefHeight="29.0" prefWidth="128.0" text="Connect" />
+            <Label fx:id="wrongLogin" layoutX="186.0" layoutY="64.0" prefHeight="17.0" prefWidth="231.0" />
+            <Label fx:id="wrongServer" layoutX="184.0" layoutY="217.0" prefHeight="17.0" prefWidth="231.0" />
+            <Label fx:id="serverDetails" alignment="CENTER" layoutX="184.0" layoutY="97.0" prefHeight="17.0" prefWidth="231.0" text="Server Details">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="103.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="171.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to HallamChat">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="77.0" fitWidth="126.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/sheffield-hallam-university-logo-branding.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
